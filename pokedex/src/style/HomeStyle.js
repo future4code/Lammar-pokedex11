@@ -49,7 +49,10 @@ export const ContainerCards = styled.div`
     margin-top: 70px;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(6, auto);
+    grid-template-columns: repeat(5, auto);
+    justify-content: space-around;
+    align-items: center;
+
     
 `
 
