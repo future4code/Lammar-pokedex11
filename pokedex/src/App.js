@@ -4,7 +4,8 @@ import Router from "./Routes/routes"
 
 function App() {
   return (
-   <body>
+   <body 
+   style={{ cursor: 'url(images/pokebola.png), auto'}}>
    <Router/>
    </body>
   );
