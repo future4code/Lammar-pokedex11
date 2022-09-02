@@ -8,6 +8,7 @@ import { useState } from "react";
 import axios from "axios";
 
 
+
 const Home =() =>{
     const navigate = useNavigate()
 
@@ -15,19 +16,24 @@ const Home =() =>{
         navigate('/Pokedex')
     }
 
+    
+
 
 
     const [data]=useRequestData(URL_GET)
     // const info= []
 
     const CardPOkemon =  data && data.map((item)=> { 
-        // info.push(item.url)
+        const goToPokeDetails = () => {
+            navigate('/PokeDetail')
+            localStorage.setItem('url', item.url)   
+        }
+
         const Img = () =>{
-            const [img, setImg] = useState('olá')
+            const [img, setImg] = useState('')
             axios.get(item.url).then(response => {
                 setImg(response.data.sprites.front_default)
             })
-
             return(
                 <img src={img} alt='imagem-pokemon'/>
             )
@@ -39,7 +45,7 @@ const Home =() =>{
             <p>{item.name}</p>
             <ContainerButtons>
             <button>Adicionar a Pokédex</button>
-            <button>Ver Detalhes</button>
+            <button onClick={goToPokeDetails} >Ver Detalhes</button>
             </ContainerButtons>
             </Card>
         )
