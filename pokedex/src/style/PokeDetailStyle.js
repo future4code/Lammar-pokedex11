@@ -47,55 +47,104 @@ export const Video = styled.video`
    
 `
 export const ContainerCards = styled.div`
-    margin-top: 70px;
+    margin-top: 100px;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(5, auto);
-    justify-content: space-around;
+    justify-content: center;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
     align-items: center;
+    grid-column-gap:250px;
+    grid-row-gap: 30px;
 
-    
-`
+    .img{
+        display: flex;
+        width: 300px;
+        justify-content: space-around;
+        grid-area: 1 / 2 / 2 / 3;
 
-
-export const ContainerButtons = styled.div`
-    display: flex;
-    margin: 5px;
-
-    button{
-        margin: 5px;
-        padding: 2px;
-        cursor: url(http://www.rw-designer.com/cursor-extern.php?id=8085), default;
-        background: linear-gradient(0deg, rgba(173,154,6,1) 3%, rgba(251,238,140,1) 44%, rgba(173,154,6,1) 98%);
-        border-radius: 10px;
-        font-size: 12px;
-        font-style: italic;
-        font-weight: bold;
-        border: none;
+        img{
+           width: 2000px;
+        }
     }
-    
-`
+          
+` 
 
-export const Card = styled.div`
-    margin: 10px;
-    background-color: rgba(0,0,0,0.4822303921568627);
-    border-radius: 10px;
-    border: 2px solid yellow;
-    width: 200px;
+export const ContainerHabildade = styled.div`
+    width: 300px;
+    background-color: black;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid yellow;
+    grid-area: 2 / 3 / 3 / 4;
+    
 
-    img{
-        margin: 10px;
-        padding: 0;
-        width: 180px;
-        border: 2px solid yellow;
-        border-radius: 10px;
-        background: linear-gradient(0deg, rgba(172,172,172,1) 0%, rgba(255,255,255,1) 44%, rgba(255,255,255,1) 55%, rgba(172,172,172,1) 100%);
+    h2{
+        padding: 5px;
+        color: yellow;
+        font-style: italic;
+        border-bottom: 1px solid yellow;
     }
+
+    .habilidade{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        justify-content: space-around;
+    }
+`
+
+export const ContainerPower = styled.div`
+    width: 300px;
+    background-color: black;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid yellow;
+    grid-area: 2 / 2 / 3 / 3;
+
+    h2{
+        padding: 5px;
+        color: yellow;
+        font-style: italic;
+        border-bottom: 1px solid yellow;
+    }
+
+    .power{
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+
+    }
+`
+
+export const ContainerType = styled.div`
+    width: 300px;
+    background-color: black;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid yellow;
+    grid-area: 1 / 3 / 2 / 4;
+
+    h2{
+        padding: 5px;
+        color: yellow;
+        font-style: italic;
+        border-bottom: 1px solid yellow;
+    }
+
+    .type{
+        margin: 10px;
+        display: flex;
+        justify-content: space-around;
+    }
+`
+
+export const MyCard = styled.div`
+    display: flex;
+    justify-content: space-between;
 
     p{
         font-size: 21px;
@@ -104,3 +153,18 @@ export const Card = styled.div`
         margin: 0 0 5px 0;
     }
 `
+
+
+export const Card = styled.div`
+    display: flex;
+    justify-content: space-between;
+
+    p{
+        font-size: 21px;
+        color: yellow;
+        font-style: italic;
+        margin: 0 0 5px 0;
+    }
+`
+
+
