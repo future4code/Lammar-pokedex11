@@ -1,16 +1,16 @@
 # POKEDEX
 
 Nome dos integrantes: 
-- Pessoa 1
+- Thiago Luca Faustino Machado
 - Pessoa 2
 - Pessoa 3
 
-Link do Surge: www.link.com.br
+Link do Surge: https://next-fire.surge.sh/
 
 O que funciona:
-- Item 1
+- Pagina Detalhes e Home
 - Item 2
 
 O que não funciona: 
-- Item 3
+- PokeDex
 - Item 4
